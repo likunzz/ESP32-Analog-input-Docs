@@ -58,6 +58,32 @@ ESP32 ที่ถูกออกแบบมาเต็มระบบ จะ�
 | 10 | GPIO27 | GPIO27 | GPIO27  |  -     |   -       |  -       | EMAC_RX_DV  | 0 | R |
 
 
+อย่างไรก็ตาม บอร์ดที่ใช้ในการทดลอง มี ADC ไม่ครบตามมาตรฐานของ ESP32
+ซึ่ง บนบอร์ดสามารถสรุปได้ดังตารางต่อไปนี้
+
+
+| ADC UNit_Channel | GPIO  |
+|-----------|--------------|
+| ADC1_CH0  | GPIO36 |
+| ADC1_CH3  | GPIO39 |
+| ADC1_CH6  | GPIO34 |
+| ADC1_CH7  | GPIO35 |
+| ADC1_CH4  | GPIO32 |
+| ADC1_CH5  | GPIO33 |
+| ADC2_CH8  | GPIO25 |
+| ADC2_CH9  | GPIO26 |
+| ADC2_CH7  | GPIO27 |
+| ADC2_CH6  | GPIO14 |
+| ADC2_CH5  | GPIO12 |
+| ADC2_CH4  | GPIO13 |
+| ADC2_CH3  | GPIO15 |
+| ADC2_CH2  | GPIO2  |
+| ADC2_CH1  | GPIO1  |
+| ADC2_CH0  | GPIO0  |
+
+
+header file ที่ประกาศขา  ADC  [adc_channel](https://github.com/espressif/esp-idf/blob/v5.3/components/soc/esp32/include/soc/adc_channel.h)
+
 
 ## ADC Attenuation
 
